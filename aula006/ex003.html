@@ -20,32 +20,14 @@
 <body>
     <h1>Olá, Mundo!</h1>
     <p>já me livrei da maldição</p> 
-    <!-- 
-        string -> number 
-    Number.parseInt(n) para número inteiro
-    Number.parseFloat(n) para número real
-    Number(n) o js decide se é inteiro ou real
-    -->
-
-    <!-- Aqui n1 e n2 está em string
     <script>
-        var n1 = window.prompt('Digite um número: ') // string
-        var n2 = window.prompt('Digite outro número: ') // string
-        var s =  n1 + n2
-        window.alert('A soma dos valores é' + s) //concatenação
-        // (number + number) para adição
-        // (string + string) para concatenação
-    </script> 
+       var n1 = Number(window.prompt('Digite um número: '))
 
-    Vamos tranformar n1 e n2 em number:
-    -->
-    <script>
-        var n1 = Number(window.prompt('Digite um número: ')) // number
-        var n2 = Number(window.prompt('Digite outro número: ')) // number
-        var s = n1 + n2
-        window.alert('A soma dos valores é ' + s) // concatenação
-        // (number + number) para adição
-        // (string + string) para concatenação
+       var n2 = Number(window.prompt('Digite outro número: '))
+       var s = n1 + n2
+
+       window.alert('A soma dos valores é ' + String(s))
     </script>
+
 </body>
 </html>
